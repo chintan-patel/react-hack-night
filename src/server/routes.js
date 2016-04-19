@@ -5,6 +5,7 @@ var data = require('./data');
 var words = require('./resources/words');
 var sentiment = require('sentiment');
 var twitter = require('twitter');
+var data = require('./data.js')
 
 var twClient = new twitter(twitterCredentials);
 
@@ -12,9 +13,20 @@ router.post('/words/:words', postWords);
 router.get('/record/:record_id', getRecord);
 router.get('/words/history', getWordHistory);
 router.get('/chintan', testTwitter);
+router.get('/teams', getTeams);
+router.post('/teams', postTeams);
 router.get('/*', four0four.notFoundMiddleware);
 
 module.exports = router;
+
+function getTeams(req, res) {
+	console.log('i am serving teams');
+	res.send(200, data.getTeams());
+}
+function postTeams(req, res) {
+	console.log('i got that', req.body);
+	res.send(200, data.getTeams());
+}
 
 //////////////
 function getRecord(req, res) {
@@ -32,12 +44,12 @@ function testTwitter(req, res) {
 		if (err) {
 			res.status(404).send(err);
 		}
-		console.log(data);	
+		console.log(data);
 		res.send(data);
-		
+
 	});
 }
-	
+
 function postWords(req, res) {
 	// Try twitter
 	var newWord = req.params.words;
@@ -51,7 +63,7 @@ function postWords(req, res) {
 			analysis.push(sentiment(tweets.statuses[i].text));
 		};
 		var word = new words();
-		word.analysis = analysis; 
+		word.analysis = analysis;
 		word.searchHash = newWord;
 
 		// save the words and check for errors

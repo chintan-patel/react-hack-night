@@ -1,10 +1,82 @@
 module.exports = {
-	tweets: getTweets()
+	tweets: getTweets(),
+	getTeams: getTeams
 };
+
+
+function getTeams() {
+	var teams = [
+		{
+			name: 'Team 1',
+			rating: 0
+		},
+		{
+			name: 'Team 2',
+			rating: 0
+		},
+		{
+			name: 'Team 3',
+			rating: 0
+		},
+		{
+			name: 'Team 4',
+			rating: 0
+		},
+		{
+			name: 'Team 5',
+			rating: 0
+		},
+		{
+			name: 'Team 6',
+			rating: 0
+		},
+		{
+			name: 'Team 7',
+			rating: 0
+		},
+		{
+			name: 'Team 8',
+			rating: 0
+		},
+		{
+			name: 'Team 9',
+			rating: 0
+		},
+		{
+			name: 'Team 10',
+			rating: 0
+		},
+		{
+			name: 'Team 11',
+			rating: 0
+		},
+		{
+			name: 'Team 12',
+			rating: 0
+		},
+		{
+			name: 'Team 13',
+			rating: 0
+		},
+		{
+			name: 'Team 14',
+			rating: 0
+		},
+		{
+			name: 'Team 15',
+			rating: 0
+		},
+		{
+			name: 'Team 16',
+			rating: 0
+		}
+	]
+	return teams;
+}
 
 function getTweets() {
 	return {"statuses":
-		
+
 		[
 		{"metadata":{"iso_language_code":"en","result_type":"recent"},"created_at":"Wed Mar 02 01:23:13 +0000 2016","id":704839446013698000,"id_str":"704839446013698048","text":"Amazing night with my absolutely amazing (and favorite) friend! #oscars #academyawards… https://t.co/OGXRKl5IV4","source":"<a href=\"http://instagram.com\" rel=\"nofollow\">Instagram</a>","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":3214670757,"id_str":"3214670757","name":"TrulyYoursParfums","screen_name":"TYParfums","location":"Los Angeles, CA","description":"Luxe niche fragrance brand sharing how to live life beautifully, give of yourself generously, make dreams reality. The New Definition of Luxury. Coming Fall '15","url":"http://t.co/wTUK3dxm4f","entities":{"url":{"urls":[{"url":"http://t.co/wTUK3dxm4f","expanded_url":"http://www.trulyyoursparfums.com","display_url":"trulyyoursparfums.com","indices":[0,22]}]},"description":{"urls":[]}},"protected":false,"followers_count":84,"friends_count":351,"listed_count":27,"created_at":"Mon Apr 27 21:34:59 +0000 2015","favourites_count":2501,"utc_offset":null,"time_zone":null,"geo_enabled":false,"verified":false,"statuses_count":868,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"000000","profile_background_image_url":"http://abs.twimg.com/images/themes/theme1/bg.png","profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme1/bg.png","profile_background_tile":false,"profile_image_url":"http://pbs.twimg.com/profile_images/593950075983777792/okpQD9IK_normal.jpg","profile_image_url_https":"https://pbs.twimg.com/profile_images/593950075983777792/okpQD9IK_normal.jpg","profile_banner_url":"https://pbs.twimg.com/profile_banners/3214670757/1430441497","profile_link_color":"ABB8C2","profile_sidebar_border_color":"000000","profile_sidebar_fill_color":"000000","profile_text_color":"000000","profile_use_background_image":false,"has_extended_profile":false,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"is_quote_status":false,"retweet_count":0,"favorite_count":0,"entities":{"hashtags":[{"text":"oscars","indices":[64,71]},{"text":"academyawards","indices":[72,86]}],"symbols":[],"user_mentions":[],"urls":[{"url":"https://t.co/OGXRKl5IV4","expanded_url":"https://www.instagram.com/p/BCZjJqmjOCL/","display_url":"instagram.com/p/BCZjJqmjOCL/","indices":[88,111]}]},"favorited":false,"retweeted":false,"possibly_sensitive":false,"lang":"en"},
 		{"metadata":{"iso_language_code":"en","result_type":"recent"},"created_at":"Wed Mar 02 01:23:11 +0000 2016","id":704839436970885100,"id_str":"704839436970885120","text":"RT @elizabethforma: Congratulations #SpotlightMovie! Courageous work of our own @BostonGlobe should be cheered around the world. #Oscars","source":"<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>","truncated":false,"in_reply_to_status_id":null,"in_reply_to_status_id_str":null,"in_reply_to_user_id":null,"in_reply_to_user_id_str":null,"in_reply_to_screen_name":null,"user":{"id":18170319,"id_str":"18170319","name":"Joe Henchman","screen_name":"jdhenchman","location":"Washington, DC","description":"Constitutional appellate lawyer and work in state tax policy. Live in DC, from California. Tweets are my own.","url":null,"entities":{"description":{"urls":[]}},"protected":false,"followers_count":2170,"friends_count":968,"listed_count":103,"created_at":"Tue Dec 16 19:37:14 +0000 2008","favourites_count":649,"utc_offset":-18000,"time_zone":"Eastern Time (US & Canada)","geo_enabled":false,"verified":false,"statuses_count":15938,"lang":"en","contributors_enabled":false,"is_translator":false,"is_translation_enabled":false,"profile_background_color":"8B542B","profile_background_image_url":"http://abs.twimg.com/images/themes/theme8/bg.gif","profile_background_image_url_https":"https://abs.twimg.com/images/themes/theme8/bg.gif","profile_background_tile":false,"profile_image_url":"http://pbs.twimg.com/profile_images/462259993387859968/hV4y1zq5_normal.jpeg","profile_image_url_https":"https://pbs.twimg.com/profile_images/462259993387859968/hV4y1zq5_normal.jpeg","profile_link_color":"9D582E","profile_sidebar_border_color":"D9B17E","profile_sidebar_fill_color":"EADEAA","profile_text_color":"333333","profile_use_background_image":true,"has_extended_profile":true,"default_profile":false,"default_profile_image":false,"following":false,"follow_request_sent":false,"notifications":false},"geo":null,"coordinates":null,"place":null,"contributors":null,"retweeted_status":
