@@ -1,8 +1,3 @@
-class List extends React.Component {
-  render() {
-    return( <div>Votes</div> );
-  }
-}
 var Link = window.ReactRouter.Link;
 var Teams = React.createClass({
   getInitialState: function() {
@@ -28,7 +23,7 @@ var Teams = React.createClass({
         <div className="master">
           <ul>
             {this.state.teams.map(team => (
-              <li key={team.id}><Link to={`/team/${team.id}`}>{team.name}</Link></li>
+              <li key={team.id}><Link to={`/team/${team.id}`}>{team.name}</Link> {team.rating}</li>
             ))}
           </ul>
         </div>
@@ -41,7 +36,6 @@ var Teams = React.createClass({
 });
 
 ReactDOM.render(
-
   <Teams source="/api/teams" />,
   document.getElementById('list')
 );
