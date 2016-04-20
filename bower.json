@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "react": "^15.0.1",
-    "react-bootstrap": "^0.29.0"
+    "react-bootstrap": "^0.29.0",
+    "jquery": "^2.2.3"
   }
 }

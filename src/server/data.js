@@ -7,66 +7,82 @@ module.exports = {
 function getTeams() {
 	var teams = [
 		{
+			id: 1,
 			name: 'Team 1',
 			rating: 0
 		},
 		{
+			id: 2,
 			name: 'Team 2',
 			rating: 0
 		},
 		{
+			id: 3,
 			name: 'Team 3',
 			rating: 0
 		},
 		{
+			id: 4,
 			name: 'Team 4',
 			rating: 0
 		},
 		{
+			id: 5,
 			name: 'Team 5',
 			rating: 0
 		},
 		{
+			id: 6,
 			name: 'Team 6',
 			rating: 0
 		},
 		{
+			id: 7,
 			name: 'Team 7',
 			rating: 0
 		},
 		{
+			id: 8,
 			name: 'Team 8',
 			rating: 0
 		},
 		{
+			id: 9,
 			name: 'Team 9',
 			rating: 0
 		},
 		{
+			id: 10,
 			name: 'Team 10',
 			rating: 0
 		},
 		{
+			id: 11,
 			name: 'Team 11',
 			rating: 0
 		},
 		{
+			id: 12,
 			name: 'Team 12',
 			rating: 0
 		},
 		{
+			id: 13,
 			name: 'Team 13',
 			rating: 0
 		},
 		{
+			id: 14,
 			name: 'Team 14',
 			rating: 0
 		},
 		{
+			id: 15,
 			name: 'Team 15',
 			rating: 0
 		},
 		{
+			id: 16,
 			name: 'Team 16',
 			rating: 0
 		}
