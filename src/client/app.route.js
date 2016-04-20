@@ -1,11 +1,12 @@
 /*import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Router, Route, Link, hashHistory } from 'react-router'
 */
 var Router = window.ReactRouter;
 var Route = window.ReactRouter.Route;
+var Redirect = window.ReactRouter.Redirect;
 var Link = window.ReactRouter.Link;
-var browserHistory = window.ReactRouter.browserHistory;
+var hashHistory = window.ReactRouter.hashHistory;
 var ReactDOM = window.ReactDOM;
 
 const App = React.createClass({
@@ -31,14 +32,6 @@ const NoMatch = React.createClass({
 // Declarative route configuration (could also load this config lazily
 // instead, all you really need is a single root route, you don't need to
 // colocate the entire config).
-ReactDOM.render((
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <Route path="list" component={List} />
-      <Route path="team" component={Teams} >
-        <Route path="/team/:teamId" component={Team} />
-      </Route>
-      <Route path="*" component={NoMatch} />
-    </Route>
-  </Router>
-), document.getElementById('list'));
+ReactDOM.render(
+    <Teams source="/api/teams" />
+, document.getElementById('list'));

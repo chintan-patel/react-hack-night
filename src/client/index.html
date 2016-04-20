@@ -2,6 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <title>Hello React!</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/react/react.js"></script>
     <script src="bower_components/react/react-dom.js"></script>
@@ -9,10 +10,13 @@
     <script src="https://npmcdn.com/react-router/umd/ReactRouter.min.js"></script>
   </head>
   <body>
-    <div id="list"></div>
+    <div class="container-fluid">
+        <div id="list"></div>
+    </div>
     <script src="bower_components/react-bootstrap/react-bootstrap.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/babel" src="src/client/components/teams.js"></script>
     <script type="text/babel" src="src/client/components/team.js"></script>
-
+    <script type="text/babel" src="src/client/app.route.js"></script>
   </body>
 </html>

@@ -1,15 +1,15 @@
-window.AppTeam = React.createClass({
+ window.AppTeam = React.createClass({
   componentDidMount() {
     this.setState({
       // route components are rendered with useful information, like URL params
-      team: findTeamById(this.props.params.teamId)
+      team: this.props.params
     })
   },
 
   render() {
     return (
       <div>
-        <h2>{this.state.team.name}</h2>
+        <h2>This{this.props.params}</h2>
         {/* etc. */}
       </div>
     )

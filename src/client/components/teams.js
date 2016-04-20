@@ -17,15 +17,21 @@ var Teams = React.createClass({
   },
 
   render: function() {
+
     return (
       <div>
-        <h1>Teams</h1>
+        <h1>Rate my Hack</h1>
         <div className="master">
-          <ul>
+          <table className="table striped">
+           <tbody>
             {this.state.teams.map(team => (
-              <li key={team.id}><Link to={`/team/${team.id}`}>{team.name}</Link> {team.rating}</li>
+                <tr key={team.id}>
+                  <td><a href={`/team/${team.id}`}>{team.name}</a></td>
+                  <td>{team.rating}</td>
+                </tr>
             ))}
-          </ul>
+             </tbody>
+          </table>
         </div>
         <div className="detail">
           {this.props.children}
@@ -34,8 +40,11 @@ var Teams = React.createClass({
     )
   }
 });
+window.AppTeams = Teams;
 
+/*
 ReactDOM.render(
   <Teams source="/api/teams" />,
   document.getElementById('list')
 );
+*/
